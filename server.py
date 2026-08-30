@@ -9,7 +9,6 @@ def fibo(x):
     return fibo(x-1) + fibo(x-2)
 
 serverPort = 16700
-accept_message = 'Connected the server'
 serverSocket = socket(AF_INET, SOCK_STREAM)
 serverSocket.bind(('0.0.0.0', serverPort))
 serverSocket.listen(1)
